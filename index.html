@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝波认证</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <div class="header">登录</div>
+        <form class="form-wrapper" id="loginForm" autocomplete="off">
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" placeholder="用户名" class="input-item" autocomplete="username" required>
+            <label for="password">密码</label>
+            <input type="password" id="password" name="password" placeholder="密码" class="input-item" autocomplete="current-password" required>
+            <button type="submit" class="btn" id="loginBtn">登录</button>
+            <div class="error-msg" id="errorMsg" aria-live="polite"></div>
+        </form>
+        <div class="msg">
+            没有账户?
+            <a href="register.html">注册</a>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

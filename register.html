@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <div class="header">注册</div>
+        <form class="form-wrapper" id="registerForm" autocomplete="off">
+            <label for="reg-username">用户名</label>
+            <input type="text" id="reg-username" name="username" placeholder="用户名" class="input-item" autocomplete="username" required>
+            <label for="reg-password">密码</label>
+            <input type="password" id="reg-password" name="password" placeholder="密码" class="input-item" autocomplete="new-password" required>
+            <label for="reg-confirm">确认密码</label>
+            <input type="password" id="reg-confirm" name="confirm" placeholder="确认密码" class="input-item" autocomplete="new-password" required>
+            <button type="submit" class="btn" id="registerBtn">注册</button>
+            <div class="error-msg" id="regErrorMsg" aria-live="polite"></div>
+        </form>
+        <div class="msg">
+            已有账户？
+            <a href="index.html">去登录</a>
+        </div>
+    </div>
+</div>
+<script src="register.js"></script>
+</body>
+</html> 
